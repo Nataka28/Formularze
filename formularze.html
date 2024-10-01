@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <style>
+        body {
+            background-color: greenyellow;
+            text-align: center;
+        }
+        input{
+            margin-bottom: 4px;
+        }
+        select
+        {
+            margin-bottom: 4px;
+        }
+        textarea{
+            width: 400px;
+            height: 50px;
+            margin-bottom: 4px;
+        }
+        #contener{
+            display: flex;
+        }
+        #jeden{
+            width: 30%;
+            height: 500px;
+        }
+        #trzy{
+            width: 30%;
+            height: 500px;
+        }
+        p{
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size: x-large;
+        }
+        h1
+        {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="imie">Imie:</label>
+        <input type="text" name="imie" id="imie">
+    <br>
+    <label for="nazwisko">Nazwisko:</label>
+    <input placeholder="Nazwisko" type="text" name="nazwisko" id="nazwisko">
+<br>
+        <label for="kraj">Wybierz kraj:</label>
+        <select name="kraj" id="kraj" >
+            <option value="pl">Polska</option>
+            <option value="eng">Anglia</option>
+            <option value="arg">Argentyna</option>
+        </select>
+
+    <br>
+        <label for="tel">Numer telefonu:</label>
+        <input name="tel" type="tel" id="tel" placeholder="Telefon">
+        <br>
+
+
+        <label for="dlugitext">Wiadomość:</label>
+        <textarea name="dlugitext" id="dlugitext" placeholder="Wiadomość"></textarea>
+
+        <br>
+
+        <label for="marka">Wybierz markę:</label>
+        <input type="radio" name="plec" value="bmw" checked>BMW
+        <input type="radio" name="plec" value="audi" disabled>AUDI
+        <input type="radio" name="plec" value="skoda">Skoda
+
+
+        <br>
+
+        <label for="akceptacja">Akceptuję regulamin</label>
+        <input type="checkbox" name="akceptacja" id="akceptacja">
+
+
+        <br> 
+        <button type="reset" id="przycisk2" >Wyczyść</button>
+        <button type="submit" id="przycisk" onclick="cwl()" >Prześlij</button>
+        <hr>
+        
+
+</body>
+</html>
